@@ -13,7 +13,7 @@ async function getRecipeFromMistral(ingredients) {
       headers: {
         "Content-Type": "application/json",
         "Authorization": `Bearer ${process.env.OPENROUTER_API_KEY}`,
-        "HTTP-Referer": "http://localhost:5173",
+        "HTTP-Referer": "https://startling-hotteok-4a31d9.netlify.app",
         "X-Title": "ChefClaude Recipe Generator",
       },
       body: JSON.stringify({
